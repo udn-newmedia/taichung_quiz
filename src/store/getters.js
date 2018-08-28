@@ -1,0 +1,10 @@
+export const anchorMenu = state => state.anchorMenu
+export const QuizScaleRatio = state => state.QuizScaleRatio
+export const stageIndex = state => state.stageIndex
+export const QuizData = state => state.QuizData
+export const showIntro = state => state.showIntro
+export const IntroIndex = state => state.IntroIndex
+export const IntroData = state => state.IntroData
+export const InfoData = state => state.InfoData
+export const congShow = state => state.congShow
+export const showNext = state => state.showNext
