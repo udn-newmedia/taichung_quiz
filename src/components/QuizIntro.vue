@@ -1,4 +1,5 @@
 <template>
+  <!-- 這是泡泡觸發的解說 -->
   <div class="infoSeciton">
     <div class="infoWrapper" v-show="showIntro">
       <div class="info" ref="info">

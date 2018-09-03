@@ -1,4 +1,5 @@
 <template>
+  <!-- 這是關卡內的Modal(lightbox) -->
   <div class="TheQuiz" :style="{zIndex: raiseZ_index}">
     <div class="circle_animation" :style="{height: height + 'px', width: width + 'px',transform: 'scale(' + QuizScaleRatio + ')'}" @transitionend.stop="handle_transtionend"></div>
     <div class="quiz_section" :style="{opacity: show_quiz}">

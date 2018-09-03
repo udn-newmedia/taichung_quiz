@@ -1,5 +1,6 @@
 <template>
   <div class="taichung_cover" :class="{'shouldOverflow': congShow}">
+    <!-- 藍天白雲飛機 -->
     <div class="animate-section" v-show="!isEnd">
       <div class="cloud cloud_1 cloudLeft" style="top: 65%;right: 18%;"><img :src="imgCloud_1"></div>
       <div class="cloud cloud_2 cloudRight" style="top: 50%;left: 12%"><img :src="imgCloud_2" alt=""></div>
@@ -11,9 +12,11 @@
     </div>
     <div class="stage_wrapper">
       <ul class="stage" :style="{transform: 'translate(' + stageIndex * -100 + '%, 0)'}" @transitionend="handle_transitionend">
+        <!-- 第一頁 -->
         <li :style="{backgroundImage: 'url(' + srcRWD(imgLand, imgLand_pc) + ')'}">
           <div class="btn-gamestart" @click="ClickToNextStage"><img :src="imgGameStart" alt="開始遊戲" title="開始遊戲"></div>
         </li>
+        <!-- 關卡頁 -->
         <li v-for="(item, index) in InfoData" :key="item.key" :style="{backgroundImage: 'url(' + srcRWD(item.BGimg[0], item.BGimg[1]) + ')'}">
           <div class="stage-count">
             <h2>第 {{index + 1}} 關</h2>
@@ -41,6 +44,7 @@
             <img v-show="stageIndex - 1 === index" class="bounceIn" style="animation-delay: 1.2s" src="@/assets/notice.png">
           </div>
         </li>
+        <!-- 結束頁 -->
         <li class="ending" ref="endMap">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
               <defs>
@@ -499,6 +503,7 @@
         </li>
       </ul>
     </div>
+    <!-- 過關提示 -->
     <div class="cong" v-show="congShow" :class="{'swing': congShow}">
       <img :src="imgCong">
     </div>
