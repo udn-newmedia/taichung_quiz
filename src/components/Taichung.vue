@@ -441,7 +441,7 @@
                   <path d="M902.7,600.8l-3.2,9.8a3.1,3.1,0,0,0,2.9,4h6.4a3.1,3.1,0,0,0,2.9-4l-3.2-9.8A3.1,3.1,0,0,0,902.7,600.8Z" class="cls-8"/>
                   <image width="1191" height="1192" transform="translate(1435 998.3) scale(0.05)" xlink:href="@/../static/otherlogo.png"/>
                   <text class="cls-25" transform="translate(1503 1037.6)">
-                      台中市教育局
+                      台中市政府 廣告
                   </text>
                   <text class="cls-26" transform="translate(852.6 79.1)">
                       苗栗市

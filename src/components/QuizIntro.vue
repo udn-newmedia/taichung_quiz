@@ -3,6 +3,7 @@
     <div class="infoWrapper" v-show="showIntro">
       <div class="info" ref="info">
         <img :src="IntroData[IntroIndex].img">
+        <p><br></p>
         <p v-for="item in IntroData[IntroIndex].text" :key="item">{{item}}</p>
         <p><br></p>
         <div class="next_stage" @click="ClickToCloseIntro"><img :src="imgBack" alt="回到上一頁" title="回到上一頁"></div>

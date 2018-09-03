@@ -17,6 +17,8 @@
     <div class="result_wrapper" v-show="isInfoShow">
       <div class="result" ref="result">
         <img :src="IntroData[handle_introIndex].img" alt="">
+        <img class="goodjob" :src="imgGood">
+        <p><br></p>
         <p v-for="(item) in IntroData[handle_introIndex].text" :key="item.choice">{{item}}</p>
         <p><br></p>
         <div class="next_stage" @click="handle_click_next">
@@ -29,6 +31,7 @@
 </template>
 
 <script>
+import imgGood from '@/assets/goodjob.png'
 import imgAnswer from '@/assets/A1-6.png'
 import imgNotAnswer from '@/assets/A1-5.png'
 import { mapGetters, mapActions } from 'vuex'
@@ -36,6 +39,7 @@ export default {
   name: 'Quiz',
   data () {
     return {
+      imgGood: imgGood,
       imgAnswer: imgAnswer,
       imgNotAnswer: imgNotAnswer,
       height: window.innerHeight * 2,
@@ -270,6 +274,14 @@ export default {
     margin: 0 auto;
     max-width: 500px;
     text-align: left;
+  }
+}
+.goodjob{
+  display: block;
+  margin: 0 auto;
+  width: 50% !important;
+  @media screen and (min-width: 1024px) {
+    width: 25% !important;
   }
 }
 .next_stage{
