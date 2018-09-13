@@ -184,8 +184,13 @@ export default {
   img{
     display: block;
     width: 100%;
-    max-width: 500px;
     margin: 0 auto;
+  }
+  @media screen and (min-width: 1024px) {
+    img{
+      height: 100%;
+      width: auto;
+    }
   }
 }
 .answer_section{

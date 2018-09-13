@@ -674,7 +674,7 @@ export default {
     opacity: 0;
     cursor: pointer;
     @media screen and (min-width: 1025px) {
-      width: 200px;
+      width: 22vh;
     }
   }
 }
@@ -697,7 +697,7 @@ export default {
   transform: scale(1);
   transition: transform 222ms;
   @media screen and (min-width: 1025px) {
-    width: 300px;
+    width: 30vh;
   }
   &:active {
     transform: scale(0.9);
